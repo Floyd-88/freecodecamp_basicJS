@@ -91,3 +91,46 @@ let myStr = "Jello World";
 // Only change code below this line
 myStr = "Hello World"; // Change this line
 // Only change code above this line*/
+
+/*Modify the data stored at index 0 of myArray to a value of 45.
+
+const myArray = [18, 64, 99];
+myArray[0]=45;*/
+
+
+
+/*Using bracket notation select an element from myArray such that myData is equal to 8.
+
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+const myData = myArray[2][1];*/
+
+
+
+/*Push ["dog", 3] onto the end of the myArray variable.*/
+// Setup
+/*const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);*/
+// Only change code below this line
+
+
+
+/*Use the .pop() function to remove the last item from myArray and assign the popped off value to a new variable, removedFromMyArray.*/
+// Setup
+/*const myArray = [["John", 23], ["cat", 2]];
+let removedFromMyArray = myArray.pop()
+// Only change code below this line*/
+
+
+
+
+/*Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.*/
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+
+// Only change code below this line
