@@ -493,3 +493,209 @@ const testObj = {
 // Only change code below this line
 const hatValue = testObj.hat;      // Change this line
 const shirtValue = testObj.shirt;    // Change this line*/
+
+
+
+/*Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.*/
+
+/*// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line*/
+
+
+
+
+/*Update the myDog object's name property. Let's change her name from Coder to Happy Coder. You can use either dot or bracket notation.*/
+
+/*// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder";
+// Only change code below this line
+*/
+
+
+
+/*Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".*/
+/*let obj = {
+  	gift: "pony", 
+  	pet: "kitten", 
+  	bed: "sleigh"}
+
+
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  if(obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else{return "Not Found"}
+}
+
+  console.log(checkObj(obj, "gift"))*/
+
+
+
+/*Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.*/
+
+/*const myArray = [];
+let i = 5;
+while (i >= 0) {
+  myArray.push(i);
+  i--;
+}
+console.log(myArray)*/
+
+
+
+/*Use a for loop to push the values 1 through 5 onto myArray.*/
+
+
+/*const myArray = [];
+for(let i=1; i <=5; i++) {
+  myArray.push(i)
+}console.log(myArray)
+*/
+
+
+/*Push the odd numbers from 1 through 9 to myArray using a for loop.*/
+
+/*// Setup
+const myArray = [];
+for(let i=1; i <=9; i = i+2) {
+myArray.push(i)
+}
+// Only change code below this line*/
+
+
+
+/*Push the odd numbers from 9 through 1 to myArray using a for loop.*/
+
+// Setup
+/*const myArray = [];
+for(let i=9; i>=1; i = i -2) {
+  myArray.push(i);
+}
+// Only change code below this line
+*/
+
+
+
+
+/*Modify function multiplyAll so that it returns the product of all the numbers in the sub-arrays of arr.*/
+
+
+/*function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+for(let i=0; i<arr.length; i++){
+  for(let j=0; j<arr[i].length; j++) {
+    product *= arr[i][j]; 
+  }
+}
+  // Only change code above this line
+  return product;
+}
+
+console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));*/
+
+
+
+/*Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and i will be equal to 11 when your code has finished running.*/
+
+/*// Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+do {
+  myArray.push(i);
+  i++;
+} while(i < 5)*/
+
+
+
+/*Напишите рекурсивную функцию, sum(arr, n)которая возвращает сумму первых nэлементов массива arr.*/
+
+/*function sum(arr, n) {
+  // Only change code below this line
+if(n<=0) {
+  return 0;
+} else {
+return  sum(arr, n-1) + arr[n-1]; 
+
+}
+}
+console.log(sum([1, 2, 3, 4, 5], 3))
+*/
+
+
+// Setup
+
+
+
+/*We have an array of objects representing different people in our contacts lists.
+A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
+The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
+If both are true, then return the "value" of that property.
+If name does not correspond to any contacts then return the string No such contact.
+If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.*/
+
+/*const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+	let nameContacts = false;
+  // Only change code below this line
+for(i=0; i<contacts.length; i++) {
+	if(contacts[i]["firstName"] != name) {
+		nameContacts = true;
+	}
+	else if(contacts[i]["firstName"] == name) {
+		if(contacts[i][prop] != undefined) {
+			return contacts[i][prop]
+		}else {
+			return "No such property"}
+	} 
+}
+if(nameContacts) {
+	return "No such contact"
+}
+
+}
+console.log(lookUpProfile("Kristian", "lastNam"));*/
