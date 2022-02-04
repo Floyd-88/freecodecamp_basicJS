@@ -252,3 +252,244 @@ function processArg(num) {
 // Only change code below this line
 
 
+
+/*Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+Add the number to the end of the array, then remove the first element of the array.
+The nextInLine function should then return the element that was removed.*/
+
+/*function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+
+  return arr.shift();
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));*/
+
+
+
+
+/*Modify the welcomeToBooleans function so that it returns true instead of false when the run button is clicked.*/
+
+/*function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}*/
+
+
+
+/*Create an if statement inside the function to return Yes, that was true if the parameter wasThatTrue is true and return No, that was false otherwise.*/
+
+/*function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+if(wasThatTrue) {
+ return "Yes, that was true"
+  }else {
+ return   "No, that was false"
+  }
+
+
+  // Only change code above this line
+
+}*/
+
+
+
+/*Write chained if/else if statements to fulfill the following conditions:
+
+num < 5 - return Tiny
+num < 10 - return Small
+num < 15 - return Medium
+num < 20 - return Large
+num >= 20 - return Huge*/
+
+/*function testSize(num) {
+  // Only change code below this line
+if(num < 5) {
+  return "Tiny"
+  }
+else if(num < 10) {
+  return "Small"
+  }
+else if(num < 15) {
+  return "Medium"
+  }
+else if(num < 20) {
+   return "Large"
+   }
+else if(num >=  20) {
+  return "Huge"}
+
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+testSize(7);*/
+
+
+
+
+
+/*Your function will be passed par and strokes arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):
+Strokes	Return
+1	"Hole-in-one!"
+<= par - 2	"Eagle"
+par - 1	"Birdie"
+par	"Par"
+par + 1	"Bogey"
+par + 2	"Double Bogey"
+>= par + 3	"Go Home!"
+par and strokes will always be numeric and positive. We have added an array of all the names for your convenience.*/
+
+/*const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+if(strokes === 1) {
+  return names[0];
+} else if(strokes <= par - 2) {
+  return names[1];
+} else if(strokes === par - 1) {
+  return names[2];
+} else if(strokes === par) {
+  return names[3];
+} else if(strokes === par + 1) {
+  return names[4];
+} else if(strokes === par + 2) {
+  return names[5];
+} else if(strokes >= par + 3) {
+  return names[6];
+}
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+golfScore(5, 4);*/
+
+
+
+
+/*Write a switch statement to set answer for the following conditions:
+a - apple
+b - bird
+c - cat
+default - stuff*/
+
+/*function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+switch(val) {
+  case "a":
+  return "apple";
+  break;
+  case "b":
+  return "bird";
+  break;
+  case "c":
+  return "cat";
+  break;
+  default:
+  return "stuff"
+  break;
+}
+
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);*/
+
+
+
+
+/*You will write a card counting function. It will receive a card parameter, which can be a number or a string, 
+and increment or decrement the global count variable according to the card's value (see table). The function will 
+then return a string with the current count and the string Bet if the count is positive, or Hold if the count is 
+ero or negative. The current count and the player's decision (Bet or Hold) should be separated by a single space.
+Example Outputs: -3 Hold or 5 Bet*/
+
+
+/*let count = 0;
+function cc(card) {
+  // Only change code below this line
+switch (card) {
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+	case 6:
+		count = count + 1;
+		return (count <= 0) ?	count + " Hold" : count + " Bet";
+		break;
+	case 7:
+	case 8:
+	case 9:
+		count = count -1 + 1;
+		return (count <= 0) ?	count + " Hold" : count + " Bet";
+		break;
+	case 10:
+	case "J":
+	case "Q":
+	case "K":
+	case "A":
+		count = count -1;
+		return (count <= 0) ?	count + " Hold" : count + " Bet";
+		break; 
+
+  // Only change code above this line
+}
+}
+console.log(cc(2));
+console.log(cc(2));
+console.log(cc(2));
+console.log(cc(8));
+console.log(cc("K"));
+console.log(cc("K"));
+console.log(cc("K"));
+console.log(cc("K"));*/
+
+
+
+
+
+/*Make an object that represents a dog called myDog which contains the properties name (a string), legs, tails and friends.
+You can set these object properties to whatever values you want, as long as name is a string, legs and tails are numbers, and friends is an array.*/
+
+/*const myDog = {
+  // Only change code below this line
+name: "Bobik",
+legs: 4,
+tails: 1,
+friends: ["ball", "dogs"] 
+  // Only change code above this line
+};*/
+
+
+
+
+/*Read in the property values of testObj using dot notation. Set the variable hatValue equal to the object's property hat and set the variable shirtValue equal to the object's property shirt.*/
+
+/*// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line*/
