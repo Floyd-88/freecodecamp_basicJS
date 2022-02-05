@@ -699,3 +699,105 @@ if(nameContacts) {
 
 }
 console.log(lookUpProfile("Kristian", "lastNam"));*/
+
+
+
+/*Измените randomFraction, чтобы возвращать случайное число вместо возврата 0.*/
+
+/*function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}*/
+
+
+
+/*Создайте вызываемую функцию randomRange, которая принимает диапазон myMinи myMaxвозвращает случайное целое число, большее или равное myMin, и меньшее или равное myMax, включительно.*/
+
+/*function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin );
+  // Only change code above this line
+}
+console.log(randomRange(1, 10))*/
+
+
+
+/*Используйте parseInt()в convertToIntegerфункции, чтобы она преобразовывала входную строку strв целое число и возвращала ее.*/
+
+/*function convertToInteger(str) {
+return parseInt(str)
+}
+convertToInteger("56");*/
+
+
+
+/*Используйте parseInt()в convertToIntegerфункции, чтобы она преобразовывала двоичное число в целое и возвращала его.*/
+
+/*function convertToInteger(str) {
+return parseInt(str, 2)
+}
+
+convertToInteger("10011");
+*/
+
+
+
+/*Используйте условный оператор в checkEqualфункции, чтобы проверить, равны ли два числа или нет. Функция должна возвращать либо строку Equal, либо строку Not Equal.*/
+
+/*function checkEqual(a, b) {
+return (a === b) ? "Equal" : "Not Equal"
+}
+
+checkEqual(1, 2);*/
+
+
+
+/*В checkSignфункции используйте несколько условных операторов — в соответствии с рекомендуемым форматом, используемым в findGreaterOrEqual— чтобы проверить, является ли число положительным, отрицательным или нулем. Функция должна вернуть positive, negativeили zero.*/
+
+/*function checkSign(num) {
+return (num === 0) ? "zero" :
+(num < 0) ? "negative" : "positive"
+}
+
+checkSign(10);*/
+
+
+
+/*Мы определили функцию, вызываемую countdownс одним параметром ( n). Функция должна использовать рекурсию для 
+возврата массива, содержащего целые числа , n на 1 основе nпараметра. Если функция вызывается с числом меньше 1, 
+функция должна вернуть пустой массив. Например, вызов этой функции n = 5должен вернуть массив [5, 4, 3, 2, 1]. 
+Ваша функция должна использовать рекурсию, вызывая саму себя, и не должна использовать циклы любого вида.*/
+
+/*// Only change code below this line
+function countdown(n){
+
+  return (n < 1) ? [] : [n].concat(countdown(n-1));
+
+}
+// Only change code above this line
+
+console.log(countdown(10));*/
+
+
+
+
+/*Мы определили функцию с именем rangeOfNumbersс двумя параметрами. Функция должна возвращать массив целых чисел,
+ который начинается с числа, представленного startNumпараметром, и заканчивается числом, представленным 
+ endNumпараметром. Начальное число всегда будет меньше или равно конечному числу. Ваша функция должна 
+ использовать рекурсию, вызывая саму себя, и не использовать циклы любого рода. Это также должно работать для 
+ случаев, когда оба startNumи endNumодинаковы.*/
+
+/* function rangeOfNumbers(startNum, endNum) {
+  if(startNum === endNum) {
+  	return[startNum]
+  } else {
+  	let result = rangeOfNumbers(startNum, endNum - 1);
+  	result.push(endNum);
+  	return result;
+  }
+};
+console.log(rangeOfNumbers(10, 10))*/
